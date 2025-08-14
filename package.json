@@ -1,0 +1,38 @@
+{
+  "name": "automation-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "docker:api": "docker-compose up api-tests",
+    "docker:e2e": "docker-compose up e2e-tests",
+    "docker:per1": "docker-compose run k6 run /scripts/jsonplaceholder_test.js",
+    "docker:per2": "docker-compose run k6 run /scripts/reqres_test.js",
+    "docker:per3": "docker-compose run k6 run /scripts/petstore_test.js",
+    "docker:perf": "docker-compose run k6 run /scripts/jsonplaceholder_test.js && docker-compose run k6 run /scripts/reqres_test.js && docker-compose run k6 run /scripts/petstore_test.js",
+    "docker:all": "docker-compose up api-tests e2e-tests & npm run docker:perf",
+    "test:api": "mocha --experimental-vm-modules tests/api/**/*.test.js",
+    "test:e2e": "playwright test",
+    "test:per1": "k6 run tests/performance/jsonplaceholder_test.js",
+    "test:per2": "k6 run tests/performance/reqres_test.js",
+    "test:per3": "k6 run tests/performance/petstore_test.js",
+    "test:perf": "npm run test:per1 && npm run test:per2 && npm run test:per3",
+    "test:all": "npm run test:api && npm run test:e2e && npm run test:per"
+  },
+  "words": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "supertest": "^7.1.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.54.2",
+    "@types/node": "^24.2.1",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "axios": "^1.11.0",
+    "chai": "^5.2.1",
+    "mocha": "^11.7.1"
+  }
+}
