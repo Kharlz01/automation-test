@@ -21,7 +21,7 @@ La prueba consta de tres numerales
 
 ## 🏗 Estructura del Proyecto
 
-automation-test/
+automation-test/  
 ├── 📂 schemas/ # Esquemas de validación  
 │ ├── jsonplaceholder.schemas.js  
 │ └── reqres.schemas.js  
