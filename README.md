@@ -78,8 +78,13 @@ automation-test/
 ```
 git clone https://github.com/Kharlz01/automation-test.git
 cd automation-test
-npm install
-npx playwright install
+npm init -y
+npm install mocha@latest
+npm install ajv
+npm install ajv-formats
+npm install axios
+npm install chai
+npm init playwright@latest
 ```
 
 ## 🧪 Ejecutar Pruebas
