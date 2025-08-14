@@ -22,50 +22,50 @@ La prueba consta de tres numerales
 ## 🏗 Estructura del Proyecto
 
 automation-test/
-├── 📂 schemas/ # Esquemas de validación
-│ ├── jsonplaceholder.schemas.js
-│ └── reqres.schemas.js
-├── 📂 test/ # Directorio con los tres numerales
-│ ├── 📂 api/ # Automatización de Pruebas de API
-│ │ ├── 📂 jsonplaceholder/ # Casos de prueba (JSONPlaceholder API)
-│ │ │ ├── negative.test.js
-│ │ │ ├── performance.test.js
-│ │ │ ├── posts.test.js
-│ │ │ └── relations.test.js
-│ │ └── 📂 reqres/ # Casos de prueba (ReqRes API)
-│ │   ├── auth.test.js
-│ │   ├── pagination.test.js
-│ │   ├── rate_limits.test.js
-│ │   └── users.test.js
-│ ├── 📂 e2e/ # Automatizacion de Pruebas E2E
-│ │ ├── 📂 fixtures/ # Directorio para pruebas de carga (/upload)
-│ │ │ └── example.txt
-│ │ ├── 📂 pages/ # Paginacion para pruebas visuales.
-│ │ │ ├── dynamicControlsPage.js
-│ │ │ ├── loginPage.js
-│ │ │ └── uploadPage.js
-│ │ └── 📂 specs/ # Casos de prueba (The Internet - Herokuapp)
-│ │   ├── 📂 critical/ # Casos Criticos
-│ │   │  ├── drag_drop_critical.spec.js
-│ │   │  ├── dynamic_critical.spec.js
-│ │   │  ├── login_critical.spec.js
-│ │   │  └── upload_critical.spec.js
-│ │   ├── alert.test.js
-│ │   ├── auth.test.js
-│ │   ├── drag_drop.test.js
-│ │   ├── dynamic_elements.js
-│ │   ├── example.spec.js
-│ │   ├── auth.test.js
-│ │   ├── file_operations.test.js
-│ │   ├── forms.test.js
-│ │   ├── hovers.test.js
-│ │   └── windows_test.js
-│ └── 📂 performance/ # Pruebas de Performance
-│   ├── jsonplaceholder_test.js
-│   ├── reqres_test.js
-│   └── petstore_test.js
-├── 📜 package.json # Dependencias y scripts
-└── 📜 README.md # Documentacion
+├── 📂 schemas/ # Esquemas de validación  
+│ ├── jsonplaceholder.schemas.js  
+│ └── reqres.schemas.js  
+├── 📂 test/ # Directorio con los tres numerales  
+│ ├── 📂 api/ # Automatización de Pruebas de API  
+│ │ ├── 📂 jsonplaceholder/ # Casos de prueba (JSONPlaceholder API)  
+│ │ │ ├── negative.test.js  
+│ │ │ ├── performance.test.js  
+│ │ │ ├── posts.test.js  
+│ │ │ └── relations.test.js  
+│ │ └── 📂 reqres/ # Casos de prueba (ReqRes API)  
+│ │   ├── auth.test.js  
+│ │   ├── pagination.test.js  
+│ │   ├── rate_limits.test.js  
+│ │   └── users.test.js  
+│ ├── 📂 e2e/ # Automatizacion de Pruebas E2E  
+│ │ ├── 📂 fixtures/ # Directorio para pruebas de carga (/upload)  
+│ │ │ └── example.txt  
+│ │ ├── 📂 pages/ # Paginacion para pruebas visuales.  
+│ │ │ ├── dynamicControlsPage.js  
+│ │ │ ├── loginPage.js  
+│ │ │ └── uploadPage.js  
+│ │ └── 📂 specs/ # Casos de prueba (The Internet - Herokuapp)  
+│ │   ├── 📂 critical/ # Casos Criticos  
+│ │   │  ├── drag_drop_critical.spec.js  
+│ │   │  ├── dynamic_critical.spec.js  
+│ │   │  ├── login_critical.spec.js  
+│ │   │  └── upload_critical.spec.js  
+│ │   ├── alert.test.js  
+│ │   ├── auth.test.js  
+│ │   ├── drag_drop.test.js  
+│ │   ├── dynamic_elements.js  
+│ │   ├── example.spec.js  
+│ │   ├── auth.test.js  
+│ │   ├── file_operations.test.js  
+│ │   ├── forms.test.js  
+│ │   ├── hovers.test.js  
+│ │   └── windows_test.js  
+│ └── 📂 performance/ # Pruebas de Performance  
+│   ├── jsonplaceholder_test.js  
+│   ├── reqres_test.js  
+│   └── petstore_test.js  
+├── 📜 package.json # Dependencias y scripts  
+└── 📜 README.md # Documentacion  
 
 ## 🚀 Cómo Ejecutar
 
