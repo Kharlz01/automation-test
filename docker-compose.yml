@@ -1,0 +1,23 @@
+services:
+  # Servicio para pruebas API (Mocha) - (Punto 1)
+  api-tests:
+    build:
+      context: .
+    command: ["npm", "run", "test:api"]
+    volumes:
+      - ./test-results:/app/test-results
+
+  # Servicio para pruebas E2E (Playwright) (Punto 2)
+  e2e-tests:
+    build:
+      context: .
+    command: ["npm", "run", "test:e2e"]
+    volumes:
+      - ./playwright-report:/app/playwright-report
+      - ./test-results:/app/test-results
+
+  # Servicio dedicado para K6 (Performance) (Punto 3)
+  k6:
+    image: grafana/k6:latest  # Imagen oficial de K6
+    volumes:
+      - ./tests/performance:/scripts  # Mapea tus scripts de K6
